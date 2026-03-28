@@ -47,7 +47,7 @@ pip install scrapy lxml
 
 爬虫在 `questions.py` 的 `start` 方法中使用了硬编码的 Cookies。由于 Cookies 具有时效性，在使用前需要更新为最新的登录状态。
 
-- 打开浏览器，登录 [王啸题库](https://ks.wangxiao.cn/)
+- 打开浏览器，登录 [网校题库](https://ks.wangxiao.cn/)
 - 打开开发者工具（F12），进入“网络”标签
 - 刷新页面，找到任意请求（如首页），复制请求头中的 `Cookie` 字段
 - 将 `questions.py` 中 `cookies` 字典的内容替换为新的 Cookies
